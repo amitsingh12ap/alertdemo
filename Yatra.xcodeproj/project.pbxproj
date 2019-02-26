@@ -10,6 +10,7 @@
 		1DE2046F2225972F0094715B /* Yatra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE204652225972F0094715B /* Yatra.framework */; };
 		1DE204742225972F0094715B /* YatraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE204732225972F0094715B /* YatraTests.swift */; };
 		1DE204762225972F0094715B /* Yatra.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE204682225972F0094715B /* Yatra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DE20480222597530094715B /* SuccessAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2047F222597530094715B /* SuccessAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		1DE2046E2225972F0094715B /* YatraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YatraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE204732225972F0094715B /* YatraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YatraTests.swift; sourceTree = "<group>"; };
 		1DE204752225972F0094715B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE2047F222597530094715B /* SuccessAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				1DE204682225972F0094715B /* Yatra.h */,
 				1DE204692225972F0094715B /* Info.plist */,
+				1DE2047F222597530094715B /* SuccessAlert.swift */,
 			);
 			path = Yatra;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					1DE204642225972F0094715B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					1DE2046D2225972F0094715B = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE20480222597530094715B /* SuccessAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		1DE2047A2225972F0094715B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yatra.Yatra;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		1DE2047B2225972F0094715B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		1DE2047D2225972F0094715B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YatraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		1DE2047E2225972F0094715B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YatraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
